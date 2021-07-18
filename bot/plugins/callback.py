@@ -147,7 +147,7 @@ async def cb_navg(bot, update: CallbackQuery):
     try:
         await bot.send_photo(
             chat_id=update.chat.id,
-            photo=https://telegra.ph/file/7d2607e9a275056f03a1e.jpg"
+            photo="https://telegra.ph/file/7d2607e9a275056f03a1e.jpg"
             caption=f"<b> inna pidichoo nigal choyicha cinema </b>
             reply_markup=reply_markup,
             parse_mode="html",

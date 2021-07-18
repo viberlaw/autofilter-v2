@@ -145,10 +145,13 @@ async def cb_navg(bot, update: CallbackQuery):
     text=f"<i>Found</i> <code>{leng}</code> <i>Results For Your request :</i> <code>{query}</code>"
         
     try:
-        await update.message.edit(
-                text,
-                reply_markup=reply_markup,
-                parse_mode="html"
+        await bot.send_photo(
+            chat_id=update.chat.id,
+            photo=https://telegra.ph/file/7d2607e9a275056f03a1e.jpg"
+            caption=f"<b> inna pidichoo nigal choyicha cinema </b>
+            reply_markup=reply_markup,
+            parse_mode="html",
+            reply_to_message_id=update.message_id
         )
         
     except FloodWait as f: # Flood Wait Caused By Spamming Next/Back Buttons
@@ -1639,10 +1642,10 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/AlbertEinstein_TG'),
-            InlineKeyboardButton('Source Code 🧾', url ='https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot')
+            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/basildmx'),
+          
         ],[
-            InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
+            InlineKeyboardButton('Support 🛠', url='https://t.me/dmx_chating')
         ],[
             InlineKeyboardButton('Help ⚙', callback_data="help")
         ]]
